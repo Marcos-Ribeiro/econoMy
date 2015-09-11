@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.tcc.economy.PrincipalActivity">
+
+    <item android:id="@+id/receita" android:title="@string/receita" android:icon="@drawable/ic_receita"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/despesa" android:title="@string/despesa" android:icon="@drawable/ic_despesa"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+
+
+    <item android:id="@+id/saldo" android:title="@string/saldo" android:icon="@drawable/ic_saldo"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings" android:icon="@drawable/ic_menu"
+        android:orderInCategory="100" app:showAsAction="always"  >
+        <menu>
+            <item android:id="@+id/conta"
+                android:title="@string/conta" />
+            <item android:id="@+id/categoria"
+                android:title="@string/categoria" />
+            <item android:id="@+id/usuario"
+                android:title="@string/usuario" />
+            <item android:id="@+id/config"
+                android:title="@string/config" />
+            <item android:id="@+id/logoff"
+                android:title="@string/logoff" />
+        </menu>
+
+    </item>
+
+</menu>
+<!--
+<menu id="m2" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.tcc.economy.PrincipalActivity">
+
+    <item android:id="@+id/receita" android:title="@string/receita" android:icon="@drawable/ic_receita"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+
+    <item android:id="@+id/despesa" android:title="@string/despesa" android:icon="@drawable/ic_despesa"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+
+
+    <item android:id="@+id/saldo" android:title="@string/saldo" android:icon="@drawable/ic_saldo"
+        android:orderInCategory="100" app:showAsAction="always">
+    </item>
+</menu>
+
+
+-->

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.tcc.economy.CategoriaFormActivity">
+
+    <item android:id="@+id/salvar" android:title="@string/categoria"
+        android:orderInCategory="100" android:icon="@drawable/ic_salvar" app:showAsAction="always" />
+
+    <item android:id="@+id/cancelar" android:title="@string/categoria"
+        android:orderInCategory="100" android:icon="@drawable/ic_cancelar" app:showAsAction="always" />
+
+    <item android:id="@+id/deletar" android:title="@string/categoria"
+        android:orderInCategory="100" android:icon="@drawable/ic_deletar" app:showAsAction="always" />
+</menu>

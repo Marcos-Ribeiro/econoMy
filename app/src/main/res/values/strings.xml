@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">econoMy</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">MENU</string>
+    <string name="receita">Receita</string>
+    <string name="despesa">Despesa</string>
+    <string name="saldo">Saldo</string>
+    <string name="title_activity_despesa">Despesas</string>
+    <string name="title_activity_principal">econoMy</string>
+    <string name="file">File</string>
+    <string name="categoria">Categorias</string>
+    <string name="usuario">Usuários</string>
+    <string name="config">Configurações</string>
+    <string name="conta">Contas</string>
+    <string name="logoff">Trocar Usuário</string>
+    <string name="adicionarDespesa">ADICIONAR</string>
+    <string name="title_activity_receita">Receitas</string>
+    <string name="title_activity_extrato">Extrato</string>
+    <string name="title_activity_extrato_impresso">Extrato Impresso</string>
+    <string name="title_activity_custom_list">CustomListActivity</string>
+    <string name="title_activity_lista">ListaActivity</string>
+    <string name="title_activity_config">Configurações</string>
+    <string name="title_activity_despesa_form">Formulário</string>
+    <string name="title_activity_categoria">Categorias</string>
+    <string name="title_activity_conta">Contas</string>
+    <string name="title_activity_categoria_form">Formulário Categoria</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="br.com.tcc.economy.ContaActivity">
+
+
+    <item android:id="@+id/atualizar" android:title="@string/conta"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/ic_atualizar"/>
+
+    <item android:id="@+id/novo" android:title="@string/conta"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/ic_novo"/>
+
+</menu>

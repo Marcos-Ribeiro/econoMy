@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    tools:context="br.com.tcc.economy.DespesaFormActivity">
+
+    <!--
+    ok private int id;
+	ok private int iddefdespesa;
+	ok private int idconta;
+	ok private int idcategoria;
+	ok private int idusuario;
+	ok private String descricao;
+	private int diautil;
+	private int repetir;
+	ok private double valor;
+	private Date datainicial;
+
+	ok private Integer idmov;
+    ok private String datamov;
+    private Boolean pago;
+    -->
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtDescricao"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Descrição" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/edtValor"
+        android:layout_below="@+id/edtDescricao"
+        android:layout_centerHorizontal="true"
+        android:hint="0,00" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edtDataVencimento"
+        android:layout_below="@+id/edtValor"
+        android:layout_centerHorizontal="true"
+        android:hint="Hoje" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Despesa Paga "
+        android:id="@+id/swPago"
+        android:checked="false"
+        android:textSize="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinConta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ace"
+        android:id="@+id/spinCategoria"
+        android:layout_below="@+id/edtDataVencimento"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ace"
+        android:id="@+id/spinConta"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinCategoria"
+        android:layout_centerHorizontal="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Despesa Fixa"
+        android:id="@+id/swFixo"
+        android:textSize="17dp"
+        android:checked="false"
+        android:layout_alignTop="@+id/swPago"
+        android:layout_alignRight="@+id/spinConta"
+        android:layout_alignEnd="@+id/spinConta" />
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="br.com.tcc.economy.PrincipalActivity">
+
+    <!-- GRID VIEWS -->
+
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:id="@+id/gridDespesa"
+        android:layout_marginTop="5dp"  />
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:id="@+id/gridReceita"
+        android:layout_marginTop="125dp"  />
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:id="@+id/gridSaldo"
+        android:layout_marginTop="245dp"  />
+
+    <!-- CONTEÚDO GRID VIEW DESPESA-->
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:text=">>"
+        android:id="@+id/btnListaDespesa"
+        android:layout_alignTop="@+id/gridDespesa"
+        android:layout_alignRight="@+id/gridDespesa"
+        android:layout_alignEnd="@+id/gridDespesa"
+        android:layout_alignBottom="@+id/gridDespesa" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Despesas:"
+        android:id="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/gridDespesa"/>
+
+
+    <Spinner
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerDespesa"
+        android:layout_alignTop="@+id/gridDespesa"
+        android:layout_alignLeft="@+id/spinnerReceita"
+        android:layout_alignStart="@+id/spinnerReceita" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$153,00"
+        android:layout_alignBottom="@+id/gridDespesa"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView5" />
+
+
+    <!-- CONTEÚDO GRID VIEW RECEITA-->
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:text=">>"
+        android:id="@+id/btnListaReceita"
+        android:layout_alignTop="@+id/gridReceita"
+        android:layout_alignRight="@+id/gridReceita"
+        android:layout_alignEnd="@+id/gridReceita"
+        android:layout_alignBottom="@+id/gridReceita" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Receitas:"
+        android:id="@+id/textView3"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/gridReceita"
+        android:layout_alignRight="@+id/btnListaReceita"
+        android:layout_alignEnd="@+id/btnListaReceita" />
+
+    <Spinner
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerReceita"
+        android:layout_alignTop="@+id/gridReceita"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$130,00"
+        android:id="@+id/textView4"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/gridReceita"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <!-- CONTEÚDO GRID VIEW SALDO-->
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:text=">>"
+        android:id="@+id/btnListaSaldo"
+        android:layout_alignTop="@+id/gridSaldo"
+        android:layout_alignRight="@+id/gridSaldo"
+        android:layout_alignEnd="@+id/gridSaldo"
+        android:layout_alignBottom="@+id/gridSaldo" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Saldo:"
+        android:id="@+id/textView2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/gridSaldo"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerSaldo"
+        android:layout_alignTop="@+id/gridSaldo"
+        android:layout_alignLeft="@+id/spinnerReceita"
+        android:layout_alignStart="@+id/spinnerReceita" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$1030,00"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/gridSaldo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <!-- BOTÕES RODAPÉ
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=" + "
+        android:id="@+id/btnDespesa"
+        android:layout_alignTop="@+id/btnReceita"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=" - "
+        android:id="@+id/btnReceita"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text=" $ "
+        android:id="@+id/btnConta"
+        android:layout_alignTop="@+id/btnReceita"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+</RelativeLayout>

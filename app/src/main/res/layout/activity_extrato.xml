@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="br.com.tcc.economy.ExtratoActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Data Inicial"
+        android:onClick="showDatePickerDialog"
+        android:ems="10"
+        android:id="@+id/edtDataInicial"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:inputType="date" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Data Final"
+        android:onClick="showDatePickerDialog"
+        android:ems="10"
+        android:id="@+id/edtDataFinal"
+        android:layout_below="@+id/edtDataInicial"
+        android:layout_alignLeft="@+id/edtDataInicial"
+        android:layout_alignStart="@+id/edtDataInicial"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/edtDataFinal"
+        android:layout_alignStart="@+id/edtDataFinal"
+        android:layout_alignRight="@+id/edtDataFinal"
+        android:layout_alignEnd="@+id/edtDataFinal"
+        android:background="#BBB"
+        android:backgroundTint="#BBB"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="EXTRATO"
+        android:id="@+id/btnExtrato"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="picker"
+            android:onClick="showDatePickerDialog"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="49dp" />
+    -->
+
+
+
+</RelativeLayout>
